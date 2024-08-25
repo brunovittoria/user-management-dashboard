@@ -14,22 +14,34 @@
     <input type="text" id="search" placeholder="Search by name">
 
     <button id="fetch-users">Fetch Users</button>
+
+    <div id="error-message" class="error-message" style="display: none;"></div>
     
     <table id="user-table">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Username</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>City</th>
-                <th>Company</th>
+                <th data-sort="name">Name</th>
+                <th data-sort="username">Username</th>
+                <th data-sort="email">Email</th>
+                <th data-sort="phone">Phone</th>
+                <th data-sort="city">City</th>
+                <th data-sort="company">Company</th>
             </tr>
         </thead>
         <tbody>
             
         </tbody>
     </table>
+
+    <div id="pagination"></div>
+
+    <div id="user-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>User Details</h2>
+            <p id="modal-content"></p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
