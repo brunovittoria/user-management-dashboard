@@ -50,6 +50,9 @@ function filterUsers() {
         user.name.toLowerCase().includes(searchTerm)
     );
 
+    // Reset curent page to 1 when a search is perfomed
+    currentPage = 1;
+
     displayUsers(filteredUsers);
 }
 
