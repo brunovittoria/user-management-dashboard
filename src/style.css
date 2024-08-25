@@ -114,8 +114,25 @@ td {
 }
 
 @media (max-width: 768px) {
+    .table-container {
+        overflow-x: auto; 
+        -webkit-overflow-scrolling: touch; /* Let the scroll smooth on mobile */
+    }
+
     table {
+        width: 100%;
+        min-width: 600px;
         font-size: 14px;
+    }
+
+    #pagination button {
+        padding: 5px;
+    }
+
+    #pagination {
+        text-align: center; 
+        display: flex;
+        margin-top: 10px;
     }
 
     input[type="text"] {
